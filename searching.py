@@ -22,11 +22,20 @@ def read_data(file_name, key):
     return seqs[key]
 
 def linear_search(sequence, number):
+    positions = []
+    count = 0
+    while i < len(sequence):
+        if sequence[i] == number:
+            positions.append(i)
+            count += 1
+        i += 1
 
-    pass
+    return {'positions':positions, 'count':count}
+
 
 def main():
     read_data(file_name='sequential.json', key='unordered_numbers')
+    linear_search(sequence='sequential.json', number=5)
     pass
 
 
