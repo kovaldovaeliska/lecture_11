@@ -11,7 +11,7 @@ def read_data(file_name, key):
     :param field: (str), field of a dict to return
     :return: (list, string),
     """
-    if key in {"unordered_numbers", "ordered_numbers", "dna_sequence"}:
+    if key not in {"unordered_numbers", "ordered_numbers", "dna_sequence"}:
         return None
 
     file_path = os.path.join(cwd_path, file_name)
