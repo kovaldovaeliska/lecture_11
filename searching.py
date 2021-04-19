@@ -21,6 +21,10 @@ def read_data(file_name, key):
 
     return seqs[key]
 
+def linear_search(sequence, number):
+
+    pass
+
 def main():
     read_data(file_name='sequential.json', key='unordered_numbers')
     pass
